@@ -2,7 +2,7 @@ The purpose of this project is to create an app to practice MERN stack technolog
 
 TODO-
 
--Add error messagees when querying the database
+-Add error messages when querying the database
 
 -Edit Users functionality
 
