@@ -70,9 +70,9 @@ export default class EditExercises extends Component {
   }
 
   // setting the state of the Date
-  onChangeDate(e) {
+  onChangeDate(date) {
     this.setState({
-      date: Date(),
+      date: date
     });
   }
 

@@ -17,7 +17,8 @@ export default class CreateUser extends Component {
     // setting the state of Username
     onChangeUsername(e) {
         this.setState({
-            username: e.target.value,
+            username: e.target.value
+            
         });
     }
 
@@ -27,7 +28,8 @@ export default class CreateUser extends Component {
         const user = {
           username: this.state.username,
         }
-    
+
+
         console.log(user);
 
         axios.post('http://localhost:8080/users/add', user) // sends http post request using axios
