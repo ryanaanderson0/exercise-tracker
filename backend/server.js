@@ -10,6 +10,9 @@ const port = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
 
+app.get(cors());
+app.get(express.json());
+
 //declare the mongoDB enviornment variable
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }
@@ -35,7 +38,7 @@ if(node_uri === 'production') {
   app.use(express.static( 'build'))
 
   app.get("*", (req, res) => {
-    res.sendFile( "build", "index.html");
+    res.sendFile( "../build", "index.html");
   });
 } 
 
