@@ -35,8 +35,11 @@ const node_uri = process.env.NODE_ENV;
 
 // sets the build folder as static during production
 if(node_uri === 'production') {
-  app.use(express.static( 'build'))
+  app.use(express.static(path.join(__dirname, 'build')))
 
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  });
 } 
 
 app.listen(port, () => {
