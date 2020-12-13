@@ -37,9 +37,9 @@ const node_uri = process.env.NODE_ENV;
 if(node_uri === 'production') {
   app.use(express.static( 'build'))
 
-  app.get("*", (req, res) => {
-    res.sendFile(htdocs.getHtmlFile('index.html'));
-  });
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname = 'build/index.html'));
+  })
 } 
 
 app.listen(port, () => {
