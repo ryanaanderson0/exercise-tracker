@@ -25,7 +25,7 @@ export default class EditExercises extends Component {
 
   // React Lifecycle method, calls before anything displays on the page
   componentDidMount() {
-    axios.get('https://localhost:8080/exercises/'+this.props.match.params.id) //gets id directly from the url
+    axios.get('http://localhost:8080/exercises/'+this.props.match.params.id) //gets id directly from the url
             .then(response => {
                 this.setState({
                     username: response.data.username,
@@ -38,7 +38,7 @@ export default class EditExercises extends Component {
                 console.log(error);
             })
 
-    axios.get('https://localhost:8080/users/')
+    axios.get('http://localhost:8080/users/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -88,7 +88,7 @@ export default class EditExercises extends Component {
 
     console.log(exercise);
 
-    axios.post('/exercises/update/'+this.props.match.params.id, exercise) // sends http post request using axios
+    axios.post('http://localhost:8080/exercises/update/'+this.props.match.params.id, exercise) // sends http post request using axios
             .then(res => console.log(res.data)); //promise which outputs the result
 
     window.location = "/"; //takes user back to homepage

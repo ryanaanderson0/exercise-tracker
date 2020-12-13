@@ -32,7 +32,7 @@ export default class CreateUser extends Component {
 
         console.log(user);
 
-        axios.post('https://localhost:8080/users/add', user) // sends http post request using axios
+        axios.post('http://localhost:8080/users/add', user) // sends http post request using axios
             .then(res => console.log(res.data)); //promise which outputs the result
     
        this.setState({

@@ -25,7 +25,7 @@ export default class CreateExercises extends Component {
 
   // React Lifecycle method, calls before anything displays on the page
   componentDidMount() {
-    axios.get('https://localhost:8080/users/')
+    axios.get('http://localhost:8080/users/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -76,7 +76,7 @@ export default class CreateExercises extends Component {
 
     console.log(exercise);
 
-    axios.post('https://localhost:8080/exercises/add', exercise) // sends http post request using axios
+    axios.post('http://localhost:8080/exercises/add', exercise) // sends http post request using axios
             .then(res => console.log(res.data)); //promise which outputs the result
 
     window.location = "/"; //takes user back to homepage
