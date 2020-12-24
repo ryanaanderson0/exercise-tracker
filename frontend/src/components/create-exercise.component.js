@@ -77,7 +77,7 @@ export default class CreateExercise extends Component {
     axios.post('https://lit-bastion-77590.herokuapp.com/exercises/add', exercise)
       .then(res => console.log(res.data));
 
-    window.location = '/';
+    // window.location = '/';
   }
 
   render() {
