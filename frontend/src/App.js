@@ -8,7 +8,7 @@ import Navbar from './components/navbar.component';
 import ExerciseList from "./components/exercises-list.component";
 import EditExercise from "./components/edit-exercise.component";
 import CreateExercise from "./components/create-exercise.component";
-import CreateUser from "./components/create-user.component";
+import CreateAthlete from "./components/create-athlete.component";
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" exact component={ExerciseList} />
         <Route path="/edit/:id" component={EditExercise} />
         <Route path="/create" component={CreateExercise} />
-        <Route path="/user" component={CreateUser} />
+        <Route path="/athlete" component={CreateAthlete} />
       </div>
     </Router>
   );
