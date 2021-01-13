@@ -39,10 +39,10 @@ export default class CreateUser extends Component {
   render() {
     return (
       <div>
-        <h3>Create New Athlete</h3>
+        <h3 className="text-center">Create New Gamer</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 
-            <label>Username: </label>
+            <label className="form-label">Gamer: </label>
             <input  type="text"
                 required
                 className="form-control"
@@ -51,7 +51,7 @@ export default class CreateUser extends Component {
                 />
           </div>
           <div className="form-group">
-            <input type="submit" value="Create Athlete" className="btn btn-primary" />
+            <input type="submit" value="Add Gamer" className="primary-button button-spacing " />
           </div>
         </form>
       </div>

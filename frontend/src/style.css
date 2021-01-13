@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap");
+body {
+  background: #1F1F1F;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  padding-top: 10px;
+  -webkit-box-shadow: 0px 2px 18px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 18px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  background-color: #495057;
+}
+
+header {
+  padding-top: 50px;
+}
+
+.main-header {
+  text-transform: uppercase;
+  font-size: 4.5em;
+  text-shadow: 0px 2px 18px rgba(112, 110, 110, 0.5);
+}
+
+.sub-header {
+  font-weight: 200;
+  font-family: "Overpass", sans-serif;
+  margin-top: 1%;
+}
+
+h1, h2, h3, p, tbody {
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: "Asap", sans-serif;
+}
+
+tbody {
+  font-size: 1.2em;
+}
+
+.background-pattern {
+  background-image: url("https://i.ibb.co/68NgmZf/dot-design.png");
+  position: absolute;
+  bottom: 0;
+  height: 70%;
+  width: 50%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+hr {
+  background-color: #8bd2bd;
+  width: 50px;
+  height: 3px;
+}
+
+.form-control, .datepicker-styles {
+  -webkit-box-shadow: 0px 2px 18px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 18px 15px rgba(0, 0, 0, 0.3);
+  background-color: #b9e4d7;
+}
+
+.form-control:focus {
+  background-color: #8bd2bd;
+}
+
+.tablehead {
+  background-color: #b9e4d7;
+}
+
+.form-label {
+  color: #fff;
+  font-size: 1.3em;
+}
+
+.primary-button {
+  background-color: #383c41;
+  width: 200px;
+  padding: 8px;
+  border-radius: 5px;
+  font-family: "Asap", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+  letter-spacing: 3px;
+  border-color: #383c41;
+}
+
+.primary-button:hover {
+  -webkit-box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 2px 10px 8px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+  border-color: #8bd2bd;
+}
+
+.button-spacing {
+  margin: 15px 0;
+}
+
+a {
+  color: #fff;
+}
+
+.datepicker-styles {
+  border-style: none;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.link-style:hover {
+  color: #8bd2bd;
+}
+/*# sourceMappingURL=style.css.map */

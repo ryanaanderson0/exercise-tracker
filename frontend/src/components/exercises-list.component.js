@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import square_button from "../assets/square-button.png";
+import x_button from "../assets/x-button.png";
+
 
 const Exercise = props => (
   <tr>
@@ -9,7 +12,7 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0,10)}</td>
     <td>
-      <Link to={"/edit/"+props.exercise._id}>edit</Link> | <a href="/" onClick={() => { props.deleteExercise(props.exercise._id) }}>delete</a>
+      <Link to={"/edit/"+props.exercise._id}><img src={square_button} /></Link> <a href="/" onClick={() => { props.deleteExercise(props.exercise._id) }}><img src={x_button} /></a>
     </td>
   </tr>
 )
@@ -51,15 +54,15 @@ export default class ExercisesList extends Component {
   render() {
     return (
       <div>
-        <h3>Logged Exercises</h3>
+        <h3 class="text-center">Logged Sessions</h3>
         <table className="table">
-          <thead className="thead-light">
+          <thead width="100%" className="tablehead" >
             <tr>
-              <th>Athlete</th>
-              <th>Description</th>
-              <th>Duration</th>
-              <th>Date</th>
-              <th>Actions</th>
+              <th style={{borderStyle:"none"}}>Gamer</th>
+              <th style={{borderStyle:"none"}}>Game Title</th>
+              <th style={{borderStyle:"none"}}>Duration</th>
+              <th style={{borderStyle:"none"}}>Date</th>
+              <th style={{borderStyle:"none"}}>Edit/Delete</th>
             </tr>
           </thead>
           <tbody>
